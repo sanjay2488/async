@@ -10,7 +10,7 @@ import re  # Regular expressions module
 app = FastAPI()  # Initialize FastAPI app instance
 
 # ------------------- Database Configuration -------------------
-DATABASE_URL = "mysql+mysqlconnector://root:Prema$1998@localhost/student_management"  # Async MySQL DB URL
+DATABASE_URL = "mysql+aiomysql://root:Prema$1998@localhost/student_management" # Async MySQL DB URL
 
 engine = create_async_engine(DATABASE_URL, echo=True)  # Create async engine
 
